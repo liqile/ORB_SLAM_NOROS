@@ -65,7 +65,10 @@ $cmake ..
 
 $make
 
-###2.5 run
+##3. run
+
+###3.1 check
+
 please check you have the image data with correct type, names and path as you changed the code in `void Tracking::run()`, as mentioned in 2.4
 
 then, you should extract the "visual words" file by typing following commands
@@ -79,6 +82,8 @@ Also, you should change the settings file, it will told the program the calibrat
 $cd ~/slam/ORB_SLAM_NOROS/Data
 
 $vim Settings.yaml
+
+###3.2 run
 
 After the operations before, you can run the program
 
