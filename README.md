@@ -17,6 +17,16 @@ $git clone git@github.com:liqile/ORB_SLAM_NOROS.git
 
 ###2.1 dependencies
 
+$sudo apt-get install libboost-all-dev 
+
+$sudo apt-get install libsuitesparse-dev
+
+$sudo apt-get install libblas-dev
+
+$sudo apt-get install liblapack-dev
+
+$sudo apt-get install libeigen3-dev
+
 ###2.2 build g2o
 
 $cd ~/slam/ORB_SLAM_NOROS/Thirdparty/g2o/
@@ -43,13 +53,7 @@ $make
 
 ###2.4 build the whole project
 
-before build the project, you may have to change the code in `Tracking.cc`
-
-in the function `void Tracking::run()`, the absolute path of image data, the number of image data, as well as the type 
-
-of image file is defined. You can change them of your own need. after changing the code, you can begin building with
-
-following commands
+before build the project, you may have to change the code in `Tracking.cc`. in the function `void Tracking::run()`, the absolute path of image data, the number of image data, as well as the type of image file is defined. You can change them of your own need. after changing the code, you can begin building with following commands
 
 $cd ~/slam/ORB_SLAM_NOROS/
 
