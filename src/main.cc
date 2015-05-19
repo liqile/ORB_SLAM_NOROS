@@ -61,7 +61,7 @@ int main(int argc, char **argv)
 */
     // Load Settings and Check
     //string strSettingsFile = ros::package::getPath("ORB_SLAM")+"/"+argv[2];
-    string strSettingsFile = "/home/lql/catkin_ws/src/ORB_SLAM/Data/Settings.yaml";
+    string strSettingsFile = "/home/lql/software/ORB_SLAM_NOROS/Data/Settings.yaml";
 
     cv::FileStorage fsSettings(strSettingsFile.c_str(), cv::FileStorage::READ);
     if(!fsSettings.isOpened())
@@ -77,7 +77,7 @@ int main(int argc, char **argv)
 
     //Load ORB Vocabulary
   //  string strVocFile = ros::package::getPath("ORB_SLAM")+"/"+argv[1];
-    string strVocFile = "/home/lql/catkin_ws/src/ORB_SLAM/Data/ORBvoc.yml";
+    string strVocFile = "/home/lql/software/ORB_SLAM_NOROS/Data/ORBvoc.yml";
     cout << endl << "Loading ORB Vocabulary. This could take a while." << endl;
     cv::FileStorage fsVoc(strVocFile.c_str(), cv::FileStorage::READ);
     if(!fsVoc.isOpened())

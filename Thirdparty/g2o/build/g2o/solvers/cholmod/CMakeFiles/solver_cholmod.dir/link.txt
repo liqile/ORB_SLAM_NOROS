@@ -1,0 +1,1 @@
+/usr/bin/c++  -fPIC   -Wall -W -O3 -DNDEBUG   -shared -Wl,-soname,libg2o_solver_cholmod.so -o ../../../../lib/libg2o_solver_cholmod.so CMakeFiles/solver_cholmod.dir/solver_cholmod.cpp.o -lcholmod -lamd -lcolamd -lcamd -lccolamd -lblas -llapack ../../../../lib/libg2o_core.so ../../../../lib/libg2o_stuff.so -lrt -Wl,-rpath,/home/lql/software/ORB_SLAM_NOROS/Thirdparty/g2o/lib: 

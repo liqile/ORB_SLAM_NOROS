@@ -25,7 +25,7 @@
 #include<opencv2/opencv.hpp>
 
 #include"ORBmatcher.h"
-#include"FramePublisher.h"
+//#include"FramePublisher.h"
 #include"Converter.h"
 #include"Map.h"
 #include"Initializer.h"

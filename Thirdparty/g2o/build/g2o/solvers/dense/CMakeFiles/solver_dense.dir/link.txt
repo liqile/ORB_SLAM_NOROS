@@ -1,0 +1,1 @@
+/usr/bin/c++  -fPIC   -Wall -W -O3 -DNDEBUG   -shared -Wl,-soname,libg2o_solver_dense.so -o ../../../../lib/libg2o_solver_dense.so CMakeFiles/solver_dense.dir/solver_dense.cpp.o ../../../../lib/libg2o_core.so ../../../../lib/libg2o_stuff.so -lrt -Wl,-rpath,/home/lql/software/ORB_SLAM_NOROS/Thirdparty/g2o/lib: 
