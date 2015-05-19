@@ -53,7 +53,7 @@ $make
 
 ###2.4 build the whole project
 
-before build the project, you may have to change the code in `Tracking.cc`. in the function `void Tracking::run()`, the absolute path of image data, the number of image data, as well as the type of image file is defined. You can change them of your own need. after changing the code, you can begin building with following commands
+before build the project, you may have to change the code in `Tracking.cc`. in the function `void Tracking::run()`, the absolute path of image data, the number of image data, the names of the image files, as well as the type of image files is defined. You can change them of your own need. after changing the code, you can begin building with following commands
 
 $cd ~/slam/ORB_SLAM_NOROS/
 
@@ -66,6 +66,21 @@ $cmake ..
 $make
 
 ###2.5 run
+please check you have the image data with correct type, names and path as you changed the code in `void Tracking::run()`, as mentioned in 2.4
+
+then, you should extract the "visual words" file by typing following commands
+
+$cd ~/slam/ORB_SLAM_NOROS/Data
+
+$unzip ORBvoc.yml.tar.gz
+
+Also, you should change the settings file, it will told the program the calibration parameters of your camera
+
+$cd ~/slam/ORB_SLAM_NOROS/Data
+
+$vim Settings.yaml
+
+After the operations before, you can run the program
 
 $cd ~/slam/ORB_SLAM_NOROS/bin
 
